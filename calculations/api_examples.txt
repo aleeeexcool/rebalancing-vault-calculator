@@ -1,0 +1,311 @@
+# API Testing Examples for Fund Calculator
+
+URL: http://localhost:5000/api/max-profits
+Method: GET
+
+## 2 Funds Example
+
+Body (raw JSON):
+{
+    "total_my_supply": 100000,
+    "fee_percentage": 0.08,
+    "total_borrowed1": 179954,
+    "total_supplied1": 370406,
+    "optimal_usage_ratio1": 0.85,
+    "variable_rate_slope1_1": 0.08,
+    "variable_rate_slope2_1": 0.8,
+    "token_price1": 1,
+    "total_borrowed2": 522821,
+    "total_supplied2": 1792518,
+    "optimal_usage_ratio2": 0.75,
+    "variable_rate_slope1_2": 0.11,
+    "variable_rate_slope2_2": 0.7,
+    "token_price2": 1
+}
+
+Expected Response Format:
+{
+    "fund1_supply": [number],
+    "fund2_supply": [number],
+    "total_profit": [number]
+}
+
+## 3 Funds Example
+
+Body (raw JSON):
+{
+    "total_my_supply": 100000,
+    "fee_percentage": 0.08,
+    "total_borrowed1": 179954,
+    "total_supplied1": 370406,
+    "optimal_usage_ratio1": 0.85,
+    "variable_rate_slope1_1": 0.08,
+    "variable_rate_slope2_1": 0.8,
+    "token_price1": 1,
+    "total_borrowed2": 522821,
+    "total_supplied2": 1792518,
+    "optimal_usage_ratio2": 0.75,
+    "variable_rate_slope1_2": 0.11,
+    "variable_rate_slope2_2": 0.7,
+    "token_price2": 1,
+    "total_borrowed3": 400000,
+    "total_supplied3": 1200000,
+    "optimal_usage_ratio3": 0.8,
+    "variable_rate_slope1_3": 0.09,
+    "variable_rate_slope2_3": 0.75,
+    "token_price3": 1
+}
+
+Expected Response Format:
+{
+    "fund1_supply": [number],
+    "fund2_supply": [number],
+    "fund3_supply": [number],
+    "total_profit": [number]
+}
+
+## 4 Funds Example
+
+Body (raw JSON):
+{
+    "total_my_supply": 100000,
+    "fee_percentage": 0.08,
+    "total_borrowed1": 179954,
+    "total_supplied1": 370406,
+    "optimal_usage_ratio1": 0.85,
+    "variable_rate_slope1_1": 0.08,
+    "variable_rate_slope2_1": 0.8,
+    "token_price1": 1,
+    "total_borrowed2": 522821,
+    "total_supplied2": 1792518,
+    "optimal_usage_ratio2": 0.75,
+    "variable_rate_slope1_2": 0.11,
+    "variable_rate_slope2_2": 0.7,
+    "token_price2": 1,
+    "total_borrowed3": 400000,
+    "total_supplied3": 1200000,
+    "optimal_usage_ratio3": 0.8,
+    "variable_rate_slope1_3": 0.09,
+    "variable_rate_slope2_3": 0.75,
+    "token_price3": 1,
+    "total_borrowed4": 800000,
+    "total_supplied4": 4000000,
+    "optimal_usage_ratio4": 0.8,
+    "variable_rate_slope1_4": 0.09,
+    "variable_rate_slope2_4": 0.8,
+    "token_price4": 1
+}
+
+Expected Response Format:
+{
+    "fund1_supply": [number],
+    "fund2_supply": [number],
+    "fund3_supply": [number],
+    "fund4_supply": [number],
+    "total_profit": [number]
+}
+
+# Plot Endpoints
+
+## 2D Profit Distribution Plot (/api/profit-distribution)
+Method: GET
+
+### 2 Funds Example
+Body (raw JSON):
+{
+    "total_my_supply": 100000,
+    "fee_percentage": 0.08,
+    "total_borrowed1": 179954,
+    "total_supplied1": 370406,
+    "optimal_usage_ratio1": 0.85,
+    "variable_rate_slope1_1": 0.08,
+    "variable_rate_slope2_1": 0.8,
+    "token_price1": 1,
+    "total_borrowed2": 522821,
+    "total_supplied2": 1792518,
+    "optimal_usage_ratio2": 0.75,
+    "variable_rate_slope1_2": 0.11,
+    "variable_rate_slope2_2": 0.7,
+    "token_price2": 1
+}
+
+Expected Response:
+- PNG image showing 2D profit distribution plot
+- Content-Type: image/png
+
+## 3D Profit Distribution Plot (/api/profit-distribution-3d)
+Method: GET
+
+### 2 Funds Example
+Body (raw JSON):
+{
+    "total_my_supply": 100000,
+    "fee_percentage": 0.08,
+    "total_borrowed1": 179954,
+    "total_supplied1": 370406,
+    "optimal_usage_ratio1": 0.85,
+    "variable_rate_slope1_1": 0.08,
+    "variable_rate_slope2_1": 0.8,
+    "token_price1": 1,
+    "total_borrowed2": 522821,
+    "total_supplied2": 1792518,
+    "optimal_usage_ratio2": 0.75,
+    "variable_rate_slope1_2": 0.11,
+    "variable_rate_slope2_2": 0.7,
+    "token_price2": 1
+}
+
+### 3 Funds Example
+Body (raw JSON):
+{
+    "total_my_supply": 100000,
+    "fee_percentage": 0.08,
+    "total_borrowed1": 179954,
+    "total_supplied1": 370406,
+    "optimal_usage_ratio1": 0.85,
+    "variable_rate_slope1_1": 0.08,
+    "variable_rate_slope2_1": 0.8,
+    "token_price1": 1,
+    "total_borrowed2": 522821,
+    "total_supplied2": 1792518,
+    "optimal_usage_ratio2": 0.75,
+    "variable_rate_slope1_2": 0.11,
+    "variable_rate_slope2_2": 0.7,
+    "token_price2": 1,
+    "total_borrowed3": 400000,
+    "total_supplied3": 1200000,
+    "optimal_usage_ratio3": 0.8,
+    "variable_rate_slope1_3": 0.09,
+    "variable_rate_slope2_3": 0.75,
+    "token_price3": 1
+}
+
+### 4 Funds Example
+Body (raw JSON):
+{
+    "total_my_supply": 100000,
+    "fee_percentage": 0.08,
+    "total_borrowed1": 179954,
+    "total_supplied1": 370406,
+    "optimal_usage_ratio1": 0.85,
+    "variable_rate_slope1_1": 0.08,
+    "variable_rate_slope2_1": 0.8,
+    "token_price1": 1,
+    "total_borrowed2": 522821,
+    "total_supplied2": 1792518,
+    "optimal_usage_ratio2": 0.75,
+    "variable_rate_slope1_2": 0.11,
+    "variable_rate_slope2_2": 0.7,
+    "token_price2": 1,
+    "total_borrowed3": 400000,
+    "total_supplied3": 1200000,
+    "optimal_usage_ratio3": 0.8,
+    "variable_rate_slope1_3": 0.09,
+    "variable_rate_slope2_3": 0.75,
+    "token_price3": 1,
+    "total_borrowed4": 800000,
+    "total_supplied4": 4000000,
+    "optimal_usage_ratio4": 0.8,
+    "variable_rate_slope1_4": 0.09,
+    "variable_rate_slope2_4": 0.8,
+    "token_price4": 1
+}
+
+Expected Response for all 3D plot examples:
+- PNG image showing 3D profit distribution plot
+- Content-Type: image/png
+
+Notes:
+1. The 2D plot endpoint (/api/profit-distribution) only supports 2 funds
+2. The 3D plot endpoint (/api/profit-distribution-3d) supports 2, 3, and 4 funds
+3. All parameters are the same as used in the max-profits endpoint
+4. The response is a PNG image that can be displayed directly in a browser or saved to a file
+
+## Interest Rate Model Plot (/api/interest-rate-model)
+Method: GET
+
+### 2 Funds Example
+Body (raw JSON):
+{
+    "total_my_supply": 100000,
+    "fee_percentage": 0.08,
+    "total_borrowed1": 179954,
+    "total_supplied1": 370406,
+    "optimal_usage_ratio1": 0.85,
+    "variable_rate_slope1_1": 0.08,
+    "variable_rate_slope2_1": 0.8,
+    "token_price1": 1,
+    "total_borrowed2": 522821,
+    "total_supplied2": 1792518,
+    "optimal_usage_ratio2": 0.75,
+    "variable_rate_slope1_2": 0.11,
+    "variable_rate_slope2_2": 0.7,
+    "token_price2": 1
+}
+
+### 3 Funds Example
+Body (raw JSON):
+{
+    "total_my_supply": 100000,
+    "fee_percentage": 0.08,
+    "total_borrowed1": 179954,
+    "total_supplied1": 370406,
+    "optimal_usage_ratio1": 0.85,
+    "variable_rate_slope1_1": 0.08,
+    "variable_rate_slope2_1": 0.8,
+    "token_price1": 1,
+    "total_borrowed2": 522821,
+    "total_supplied2": 1792518,
+    "optimal_usage_ratio2": 0.75,
+    "variable_rate_slope1_2": 0.11,
+    "variable_rate_slope2_2": 0.7,
+    "token_price2": 1,
+    "total_borrowed3": 400000,
+    "total_supplied3": 1200000,
+    "optimal_usage_ratio3": 0.8,
+    "variable_rate_slope1_3": 0.09,
+    "variable_rate_slope2_3": 0.75,
+    "token_price3": 1
+}
+
+### 4 Funds Example
+Body (raw JSON):
+{
+    "total_my_supply": 100000,
+    "fee_percentage": 0.08,
+    "total_borrowed1": 179954,
+    "total_supplied1": 370406,
+    "optimal_usage_ratio1": 0.85,
+    "variable_rate_slope1_1": 0.08,
+    "variable_rate_slope2_1": 0.8,
+    "token_price1": 1,
+    "total_borrowed2": 522821,
+    "total_supplied2": 1792518,
+    "optimal_usage_ratio2": 0.75,
+    "variable_rate_slope1_2": 0.11,
+    "variable_rate_slope2_2": 0.7,
+    "token_price2": 1,
+    "total_borrowed3": 400000,
+    "total_supplied3": 1200000,
+    "optimal_usage_ratio3": 0.8,
+    "variable_rate_slope1_3": 0.09,
+    "variable_rate_slope2_3": 0.75,
+    "token_price3": 1,
+    "total_borrowed4": 800000,
+    "total_supplied4": 4000000,
+    "optimal_usage_ratio4": 0.8,
+    "variable_rate_slope1_4": 0.09,
+    "variable_rate_slope2_4": 0.8,
+    "token_price4": 1
+}
+
+Expected Response:
+- PNG image showing interest rate model plots for each fund
+- Content-Type: image/png
+
+Notes:
+1. The 2D plot endpoint (/api/profit-distribution) only supports 2 funds
+2. The 3D plot endpoint (/api/profit-distribution-3d) supports 2, 3, and 4 funds
+3. The interest rate model endpoint (/api/interest-rate-model) supports 2, 3, and 4 funds
+4. All parameters are the same as used in the max-profits endpoint
+5. The plot responses are PNG images that can be displayed directly in a browser or saved to a file
