@@ -1,0 +1,8 @@
+flask
+numpy==1.26.4
+matplotlib
+scipy
+requests
+flask-cors
+web3==6.0.0
+python-dotenv==1.0.0
