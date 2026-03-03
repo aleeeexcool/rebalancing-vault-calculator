@@ -4,8 +4,8 @@ __pycache__/
 *$py.class
 *.log
 
-
 # Cache directory for protocol adapters
 cache/
 
-# ... existing code ... 
+# Others 
+.env
