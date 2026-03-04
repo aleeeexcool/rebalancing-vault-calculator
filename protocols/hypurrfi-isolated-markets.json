@@ -1,0 +1,28 @@
+{
+  "reserves": [
+    {
+      "id": "0x2c910F67DbF81099e6f8e126E7265d7595DC20aD",
+      "underlying_token_address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "addresses_provider": "0x1244F36E812776390b3401E2391bDEb330db97fC",
+      "pool_data_provider": "0xaDB43eF86581a517CED608839d4D24E49d41187c",
+      "price_oracle": "0x50a2f17F172Db8CC0D347840750d459aCa9A08dd",
+      "reserve_interest_rate_strategy": "0xD240F663D4F594D24E344a378C5bD98D6b607352"
+    },
+    {
+      "id": "0x06Fd9D03b3d0F18E4919919b72D30c582f0a97E5",
+      "underlying_token_address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "addresses_provider": "0x15E983EF3940Ef77EB2C645Cd51559f8FF233011",
+      "pool_data_provider": "0xc156E06e7e94a31250eF2DDeEe338f1E36C3b956",
+      "price_oracle": "0xAD3EbC7E3FE3bA59ba7aa9007DBDc3dfFe00Ac4b",
+       "reserve_interest_rate_strategy": "0xdBaBd70471264B142ae9FEAC7B35A916279F844b"
+    },
+    {
+      "id": "0x2c910F67DbF81099e6f8e126E7265d7595DC20aD",
+      "underlying_token_address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "addresses_provider": "0x553265Ff16eFb2e7590941d138273F1649132265",
+      "pool_data_provider": "0xBE584AfCcAd0882d24F6cF2c27BC997b49A6c367",
+      "price_oracle": "0xAC9602a0fAb55BDf13B502Eacabc476401D28Fed",
+      "reserve_interest_rate_strategy": "0x96E79A73DE12de35B133aC309db9D077dcfBcA51"
+    }
+  ]
+}
